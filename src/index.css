@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Actioness";
+  src: url("/public/fonts/Actioness.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme inline {
+  --color-bg-primary: #5f3e1b;
+  --color-bg-secondary: #e0be14;
+  --color-bg-tertiary: #000000;
+  --color-bg-white: #FFFFFF;
+
+  --color-border: #e5e7eb;
+
+  --color-txt-primary: #000000;
+  --color-txt-secondary: #ffffff;
+  --color-txt-tertiary: #5f3e1b;
+
+  --color-txt-dev: #000000;
+}
+
+.font-actioness {
+  font-family: "Actioness", sans-serif;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+}
