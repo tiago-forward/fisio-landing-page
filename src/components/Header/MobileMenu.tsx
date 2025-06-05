@@ -32,22 +32,19 @@ export const MobileMenu = () => {
 
       {isOpen && (
         <div
-          className="absolute h-screen inset-0 opacity-50 z-50"
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity z-40"
           onClick={handleToggleMenu}
         ></div>
       )}
 
-      <div
-        className={`z-50 w-9/12 h-screen flex flex-col absolute right-0 top-0 transition-all duration-300 ease-in-out transform
-                ${
-                  isOpen
-                    ? "translate-y-0 animate-openMenu"
-                    : "-translate-y-full"
-                }`}
+      <aside
+        className={`fixed top-0 right-0 w-9/12 max-w-sm h-screen bg-bg-primary z-50 shadow-xl transform transition-transform duration-300 ease-in-out
+          ${isOpen ? "translate-x-0" : "translate-x-full"}
+        `}
       >
-        <header className="w-full flex items-center justify-between h-20 border-b">
+        <header className="w-full flex items-center justify-between h-24 border-b-2 border-bg-secondary ">
           <a onClick={handleNavLinkMenu} href={"#"}>
-            <span className="pl-2 font-bold uppercase">Evelin Make</span>
+            <span className="pl-2 font-bold uppercase">Tecilia Santos</span>
           </a>
 
           <button
@@ -60,14 +57,14 @@ export const MobileMenu = () => {
         </header>
 
         <nav
-          className="flex flex-col flex-1 items-end justify-center gap-8 pr-4"
+          className="flex flex-col flex-1 items-end justify-center gap-4 mt-4 pr-4"
           role="navigation"
         >
-          <ul className="flex flex-col items-end gap-8">
+          <ul className="flex flex-col items-end gap-4">
             {navigationLinks.map((link) => (
               <li
                 key={link.id}
-                className="font-bold tracking-wider duration-300 uppercase text-lg"
+                className="font-bold tracking-widest duration-300 uppercase text-lg text-txt-secondary"
               >
                 <a href={link.url} aria-label={link.label} role="navigation">
                   {link.label}
@@ -75,18 +72,18 @@ export const MobileMenu = () => {
               </li>
             ))}
           </ul>
-          <a
+          {/* <a
             onClick={handleNavLinkMenu}
             href={"/contact"}
             className="flex items-center gap-2 text-md font-semibold border rounded-sm py-1 px-2"
           >
             Fale conosco
-          </a>
+          </a> */}
           <ul className="flex items-center justify-center gap-2">
             {socialMediaLinks.map((link) => (
               <li
                 key={link.id}
-                className="duration-300 rounded-full border p-1 hover:opacity-70"
+                className="duration-300 rounded-full border border-bg-secondary p-1 hover:opacity-70"
               >
                 <a
                   href={link.url}
@@ -100,7 +97,7 @@ export const MobileMenu = () => {
             ))}
           </ul>
         </nav>
-      </div>
+      </aside>
     </div>
   );
 };
