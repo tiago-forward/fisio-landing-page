@@ -1,5 +1,5 @@
 import About from "../../components/sections/About";
-import Contact from "../../components/sections/Contact";
+import Address from "../../components/sections/Address";
 import Services from "../../components/sections/Services";
 import Experience from "../../components/sections/Experience";
 import Testimonials from "../../components/sections/Testimonials";
@@ -38,11 +38,11 @@ export default function Home() {
             <div className="flex flex-col md:gap-10 items-center justify-center mt-24 lg:mt-0 text-center">
               <h1
                 style={{ transform: "scaleY(1.2)" }}
-                className="font-actioness uppercase mb-8 text-2xl font-bold md:text-4xl lg:text-5xl xl:text-6xl max-w-xl text-txt-tertiary"
+                className="font-actioness uppercase mb-8 text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl max-w-xl text-txt-tertiary"
               >
                 Você está sofrendo com dor na coluna?
               </h1>
-              <p className="font-actioness font-semibold text-lg md:text-2xl lg:text-3xl tracking-wide max-w-md sm:max-w-xl lg:max-w-2xl text-txt-tertiary">
+              <p className="font-actioness font-semibold text-xl md:text-2xl lg:text-3xl tracking-wide max-w-md sm:max-w-xl lg:max-w-2xl text-txt-tertiary">
                 Essa dor está impedindo você de realizar atividades simples do
                 dia a dia?
               </p>
@@ -94,8 +94,8 @@ export default function Home() {
           ></path>
         </svg>
       </section>
-      <section id="contato" className="min-h-[79vh] bg-[#FFFFFF]">
-        <Contact />
+      <section id="endereço" className="min-h-[79vh] bg-[#FFFFFF]">
+        <Address />
       </section>
     </main>
   );

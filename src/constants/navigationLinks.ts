@@ -16,7 +16,7 @@ export const navigationLinks = [
   },
   {
     id: 4,
-    label: "Contato",
-    url: "#contato",
+    label: "Endereço",
+    url: "#endereço",
   },
 ];

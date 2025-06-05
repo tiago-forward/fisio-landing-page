@@ -56,7 +56,10 @@ const services = [
 export default function Services() {
   return (
     <div className="max-w-screen-xl m-auto px-4 py-12">
-      <TitleSection title="Meus principais serviços que estarei aplicando em você" />
+      <TitleSection
+        variant="secondary"
+        title="Meus principais serviços que estarei aplicando em você"
+      />
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 not-[]:mt-12">
         {services.map((service) => (
           <div
@@ -66,10 +69,14 @@ export default function Services() {
             <img
               src={service.imgUrl}
               alt={service.title}
-              className="w-full h-80 object-cover rounded-xl mb-4"
+              className="rounded-xl shadow-lg object-cover w-full h-80 mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2 text-txt-tertiary">{service.title}</h3>
-            <p className="text-txt-tertiary">{service.description}</p>
+            <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2 text-txt-primary">
+              {service.title}
+            </h3>
+            <p className="text-md md:text-lg lg:text-xl text-txt-primary">
+              {service.description}
+            </p>
           </div>
         ))}
       </div>

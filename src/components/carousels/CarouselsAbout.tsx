@@ -114,9 +114,9 @@ export function CarouselsAbout() {
               <img
                 src={item.imgUrl}
                 alt={`Slide ${item.id}`}
-                className="w-full h-80 object-cover"
+                className="rounded-xl shadow-lg object-cover w-full h-80"
               />
-              <p className="mt-2 mb-6 text-center text-base md:text-lg px-2 text-txt-primary">
+              <p className="mt-2 mb-6 text-center text-md md:text-lg lg:text-xl px-2 text-txt-primary">
                 {item.description}
               </p>
             </div>

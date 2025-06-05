@@ -38,7 +38,7 @@ export default function Experience() {
           key={idx}
           className={`flex flex-col lg:flex-row ${
             item.reverse ? "lg:flex-row-reverse" : ""
-          } items-center gap-8 my-12`}
+          } items-center gap-4 md:gap-6 lg:gap-8 lg:my-12`}
         >
           <video
             muted
@@ -48,7 +48,7 @@ export default function Experience() {
             preload="none"
             controls
             poster={item.poster}
-            className="w-full lg:w-80 rounded-2xl shadow-lg"
+            className="rounded-xl shadow-lg object-cover w-full lg:w-80"
           >
             <source
               src={"/assets/videos/Depoimentos-PM3-2024-Mariana-Pieslak.webm"}
@@ -57,10 +57,12 @@ export default function Experience() {
           </video>
 
           <div className="w-full lg:w-1/2">
-            <h3 className="text-4xl font-actioness font-semibold mb-4 text-txt-tertiary">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-actioness font-semibold mb-4 text-txt-primary">
               {item.title}
             </h3>
-            <p className="text-2xl text-txt-description text-txt-tertiary">{item.description}</p>
+            <p className="text-lg md:text-xl lg:text-2xl text-txt-description text-txt-primary">
+              {item.description}
+            </p>
           </div>
         </div>
       ))}

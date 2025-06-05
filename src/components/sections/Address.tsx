@@ -1,9 +1,9 @@
 import TitleSection from "../titles/TitleSection";
 
-export default function Contact() {
+export default function Address() {
   return (
     <div className="max-w-screen-xl m-auto px-2 py-8">
-      <TitleSection title="Contato" />
+      <TitleSection variant="secondary" title="Endereço" />
     </div>
   );
 }

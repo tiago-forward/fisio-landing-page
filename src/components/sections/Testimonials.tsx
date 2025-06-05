@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 // import ArrowLeft from "../Icons/ArrowLeft";
 // import { useRef } from "react";
 import VideoTestimonials from "../VideoTestimonials";
+import TitleSection from "../titles/TitleSection";
 
 const googleReviews = [
   {
@@ -50,10 +51,8 @@ export default function Testimonials() {
   return (
     <div className="relative bg-bg-secondary py-20 px-4 sm:px-8 lg:px-16 overflow-hidden">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-actioness font-bold text-txt-tertiary mb-4">
-          O que pacientes dizem sobre mim
-        </h2>
-        <p className="text-lg md:text-xl font-medium text-txt-tertiary mb-12">
+        <TitleSection title="O que pacientes dizem sobre mim" />
+        <p className="text-lg md:text-xl lg:text-2xl font-medium text-txt-primary mb-12">
           Depoimentos reais de quem sentiu a diferença.
         </p>
       </div>
@@ -95,7 +94,7 @@ export default function Testimonials() {
         >
           {googleReviews.map((review, index) => (
             <SwiperSlide key={index}>
-              <div className="mb-8 bg-white border border-border rounded-[2rem] px-6 py-8 md:px-8 flex flex-col justify-between h-full transition hover:scale-[1.01] duration-300">
+              <div className="mb-8 bg-bg-white border border-bg-white rounded-[2rem] object-cover px-6 py-8 md:px-8 flex flex-col justify-between h-full transition hover:scale-[1.01] duration-300">
                 <div className="flex items-center gap-4 mb-6">
                   <img
                     src={review.foto}

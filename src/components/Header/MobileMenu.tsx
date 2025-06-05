@@ -74,7 +74,7 @@ export const MobileMenu = () => {
           </ul>
           {/* <a
             onClick={handleNavLinkMenu}
-            href={"/contact"}
+            href={"/address"}
             className="flex items-center gap-2 text-md font-semibold border rounded-sm py-1 px-2"
           >
             Fale conosco

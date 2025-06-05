@@ -13,7 +13,7 @@ export default function VideoTestimonials({ videos }: VideoTestimonialsProps) {
           >
             <video
               controls
-              className="w-full h-full object-cover"
+              className="rounded-xl shadow-lg object-cover w-full h-full"
             >
               <source src={video.src} type="video/mp4" />
               Seu navegador não suporta vídeos HTML5.

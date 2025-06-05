@@ -6,11 +6,11 @@ export default function About() {
       {/* Seção com imagem e frase de destaque */}
       <div className="grid md:grid-cols-2 gap-8 items-center mt-10">
         <div className="flex flex-col gap-6">
-          <h2 className="text-5xl font-semibold font-actioness lea  ding-tight text-txt-primary">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-actioness ding-tight text-txt-primary">
             Cuidar da sua coluna é <br className="hidden md:block" /> cuidar da
             sua vida.
           </h2>
-          <p className="text-2xl leading-relaxed text-txt-primary">
+          <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-txt-primary">
             Com uma abordagem humana, precisa e baseada em evidências, ofereço
             tratamento especializado para dores na coluna e nas extremidades,
             ajudando você a recuperar o movimento, a qualidade de vida e a
@@ -28,7 +28,7 @@ export default function About() {
 
       {/* Texto informativo mais abaixo */}
       <div className="mt-12">
-        <p className="text-xl md:text-2xl text-justify text-txt-primary leading-relaxed">
+        <p className="text-lg md:text-xl lg:text-2xl text-justify text-txt-primary leading-relaxed">
           Sou fisioterapeuta com especialização no tratamento de disfunções da
           coluna vertebral e das extremidades, atuando com foco na avaliação
           individualizada e no alívio da dor de forma eficaz e duradoura. Minha
