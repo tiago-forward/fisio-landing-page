@@ -44,7 +44,7 @@ export const MobileMenu = () => {
       >
         <header className="w-full flex items-center justify-between h-24 border-b-2 border-bg-secondary ">
           <a onClick={handleNavLinkMenu} href={"#"}>
-            <span className="pl-2 font-bold uppercase">Tecilia Santos</span>
+            Logo.png
           </a>
 
           <button
